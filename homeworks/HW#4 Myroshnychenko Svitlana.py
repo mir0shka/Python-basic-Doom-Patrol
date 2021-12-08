@@ -37,7 +37,7 @@ class SchoolBus(Bus, School):
         School.__init__(self, get_school_id, number_of_students)
         self.bus_school_color = bus_school_color
 
-bus_2 = SchoolBus(max_speed=180, mileage=178, seating_capacity=68, get_school_id=28, number_of_students=245, bus_school_color='yellow')
+bus_2 = SchoolBus(180, 178, 68, 28, 245, 'yellow')
 print(bus_2.max_speed, bus_2.get_school_id, bus_2.bus_school_color)
 
 
