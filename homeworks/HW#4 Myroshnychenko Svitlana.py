@@ -10,6 +10,8 @@ class Bus(Vehicle):
     def __init__(self, max_speed, mileage, seating_capacity):
         super().__init__(max_speed, mileage)
         self.seating_capacity = seating_capacity
+    def check_seating_capacity(self):
+        print(f'There are {self.capacity} seats in the bus.')
 
 
 # 3
@@ -36,10 +38,12 @@ class SchoolBus(Bus, School):
         Bus.__init__(self, max_speed, mileage, seating_capacity)
         School.__init__(self, get_school_id, number_of_students)
         self.bus_school_color = bus_school_color
-
+    def check_color(self):
+        print(f'The school bus is {self.capacity}.')
+        
 bus_2 = SchoolBus(180, 178, 68, 28, 245, 'yellow')
 print(bus_2.max_speed, bus_2.get_school_id, bus_2.bus_school_color)
-
+bus2.check_color()
 
 # 7
 class Bear:
