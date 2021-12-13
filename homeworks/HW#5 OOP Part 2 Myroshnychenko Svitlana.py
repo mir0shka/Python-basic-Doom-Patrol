@@ -88,15 +88,15 @@ print(concert.visitors_count)
 
 
 # 6.
-import dataclasses
+from dataclasses import dataclass
 
 
-@dataclasses.dataclass
+@dataclass
 class AddressBookDataClass:
     key: int
     name: str
     phone_number: str
-    adress: str
+    address: str
     email: str
     birthday: str
     age: int
@@ -104,7 +104,7 @@ class AddressBookDataClass:
 
 person = AddressBookDataClass(key = 123, name = 'Bob',
                               phone_number = '0432-52-42',
-                              adress ='Soborna str, 50',
+                              address ='Soborna str, 50',
                               email = 'mail@email.com',
                               birthday = '15.01.2000',
                               age = 21)
@@ -178,9 +178,9 @@ class Celsius:
         self._temperature = temperature
 
     @property
-    def fahrenheit(self):
+    def temperature(self):
         return self._temperature * 1.8 + 32
 
 
 boiling_temperature = Celsius(100)
-print(boiling_temperature.fahrenheit)
+print(boiling_temperature.temperature)
