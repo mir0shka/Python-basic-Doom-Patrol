@@ -113,9 +113,9 @@ print(person)
 #7.
 
 from collections import namedtuple
-AddressBookDataClass = namedtuple('AddressBookDataClass', ['key', 'name', 'phone_number', 'address',
+AddressBookDataClass1 = namedtuple('AddressBookDataClass', ['key', 'name', 'phone_number', 'address',
                                                            'email', 'birthday', 'age'])
-person = AddressBookDataClass(key = 123, name = 'Bob',
+person = AddressBookDataClass1 (key = 123, name = 'Bob',
                               phone_number = '0432-52-42',
                               address ='Soborna str, 50',
                               email = 'mail@email.com',
